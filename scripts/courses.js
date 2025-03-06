@@ -103,6 +103,7 @@ function displayCourses(courseList) {
     courseList.forEach(element => {
         let card = document.createElement("p");
         card.className = "course";
+        card.setAttribute("data-credits", element.credits);
 
         if (element.completed) {
             card.classList.add("completed"); 
@@ -111,6 +112,20 @@ function displayCourses(courseList) {
         card.textContent = `${element.subject} ${element.number}`;
         courseDiv.appendChild(card);
     });
+
+    updateTotalCredits();
 }
 
+function updateTotalCredits() {
+    const coursesList = document.querySelectorAll(".courses-list p");
+    const totalCredits = Array.from(coursesList).reduce((sum, course) => {
+        const credits = parseInt(course.getAttribute("data-credits")) || 0;
+        return sum + credits;
+    }, 0);
+
+    document.getElementById("total-credits").textContent = `Total Credits: ${totalCredits}`;
+}
+
+
 displayCourses(courses);
+
