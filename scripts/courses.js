@@ -78,21 +78,39 @@ const courses = [
     }
 ]
 
-const courseDiv = document.querySelector(".courses-list")
+const filterButtons = document.querySelectorAll(".filter");
+const courseDiv = document.querySelector(".courses-list");
 
-function displayCourses(course) {
-    course.forEach(element => {
-        let card = document.createElement('p');
-        card.className = 'course';
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        filterCourses(button.textContent);
+    });
+});
 
-        if (element.completed){
-            card.classList.add('completed');
+function filterCourses(filter) {
+    let filteredCourses = courses;
+
+    if (filter !== "All") {
+        filteredCourses = courses.filter(course => course.subject === filter);
+    }
+
+    displayCourses(filteredCourses);
+}
+
+function displayCourses(courseList) {
+    courseDiv.innerHTML = ""; 
+
+    courseList.forEach(element => {
+        let card = document.createElement("p");
+        card.className = "course";
+
+        if (element.completed) {
+            card.classList.add("completed"); 
         }
 
         card.textContent = `${element.subject} ${element.number}`;
-
         courseDiv.appendChild(card);
     });
-};
+}
 
 displayCourses(courses);

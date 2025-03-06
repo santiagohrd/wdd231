@@ -138,18 +138,15 @@ section h2 {
     padding: 12px;
 }
 
-.courses-filter ul {
+.courses-filter {
     display: flex;
     justify-content: center;
     list-style: none;
     padding: 0;
     gap: 10px;
+    margin: 18px;
 }
 
-.courses-filter li {
-    margin: 0;
-    padding: 8px;
-}
 
 .courses-filter button {
     padding: 12px;
@@ -162,6 +159,7 @@ section h2 {
     gap: 10px;
     justify-content: space-around;
     align-items: center;
+    padding: 16px;
 }
 
 .course{
