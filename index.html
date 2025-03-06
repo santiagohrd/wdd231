@@ -9,6 +9,7 @@
     <title>WDD 231 - Web Frontend Development I</title>
     <script src="scripts/getDate.js" defer></script>
 
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,15 +22,16 @@
 <body>
     <header>
         <div class="intro">
-            <img src="images/profile.webp" alt="My profile photo" height="200">
+            <img src="./images/Profile.webp" alt="Image profile">
             <span>Santiago Herrera</span>
         </div>
-        <nav>
-            <a href="https://www.linkedin.com/in/jaime-herrera-david/">Home</a>
-            <a href="https://byui.instructure.com/">Chamber</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng&id=p17#p17">GitHub Profile</a>
-            <a href="#">LinkedIn</a>
-        </nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Chamber</a></li>
+            <li><a href="chamber/index.html">GitHub Profile</a></li>
+            <li><a href="https://byui.instructure.com/courses/265626" target="_blank">LinkedIn</a></li>
+        </ul>
     </header>
     <main>
         <h1>Home</h1>
@@ -52,12 +54,13 @@
             <h2>Web and Computer Programming Certificate</h2>
             <div class="courses">
                 <div class="courses-filter">
-                    <ul>
+                    <ul class="filter-list">
                         <li><button type="button">All</button></li>
                         <li><button type="button">CSE</button></li>
                         <li><button type="button">WDD</button></li>
                     </ul>
                 </div>
+                
                 <div class="courses-list">
                                         
                 </div>
@@ -72,4 +75,5 @@
     </footer>
 </body>
 <script src="scripts/courses.js" defer></script>
+<script src="scripts/menu.js" defer></script>
 </html>
