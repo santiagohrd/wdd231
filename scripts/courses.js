@@ -80,11 +80,15 @@ const courses = [
 
 const courseDiv = document.querySelector(".courses-list")
 
-const displayCourses = (courses) => {
-    document.querySelector('.courses-list').innerHTML = "";
-    let name = document.createElement('p');
+function displayCourses(course) {
+        course.forEach(element => {
+            let card = document.createElement('p');
+            card.className = 'course';
 
-    name.textContent = courses.subject;
+            card.textContent = `${element.subject}`;
 
-    courseDiv.appendChild(name);
-}
+            courseDiv.appendChild(card);
+        });
+};
+
+displayCourses(courses);
