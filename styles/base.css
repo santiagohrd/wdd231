@@ -171,6 +171,10 @@ section h2 {
     text-align: center;
 }
 
+.completed{
+    background-color: green;
+}
+
 .course:nth-child(6){
     margin-bottom: 8px;
 }

@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -60,7 +60,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -81,14 +81,18 @@ const courses = [
 const courseDiv = document.querySelector(".courses-list")
 
 function displayCourses(course) {
-        course.forEach(element => {
-            let card = document.createElement('p');
-            card.className = 'course';
+    course.forEach(element => {
+        let card = document.createElement('p');
+        card.className = 'course';
 
-            card.textContent = `${element.subject}`;
+        if (element.completed){
+            card.classList.add('completed');
+        }
 
-            courseDiv.appendChild(card);
-        });
+        card.textContent = `${element.subject} ${element.number}`;
+
+        courseDiv.appendChild(card);
+    });
 };
 
 displayCourses(courses);
