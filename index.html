@@ -26,13 +26,15 @@
             <img src="./images/Profile.webp" alt="Image profile">
             <span>Santiago Herrera</span>
         </div>
-        <button id="menu"></button>
-        <ul class="navigation">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">GitHub Profile</a></li>
-            <li><a href="https://www.linkedin.com/in/jaime-herrera-david/" target="_blank">LinkedIn</a></li>
-        </ul>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/jaime-herrera-david/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <h1>Home</h1>
@@ -47,8 +49,10 @@
         </section>
             <section class="card city">
                 <h2>Zipaquirá, Colombia</h2>
-                <img src="images/Zipa.webp" alt="Zipaquirá" srcset="">
-                <figcaption>Central square of Zipaquirá</figcaption>
+                <figure>
+                    <img src="images/Zipa.webp" alt="Zipaquirá">
+                    <figcaption>Central square of Zipaquirá</figcaption>
+                </figure>
             </section>
 
         <section class="card-courses">
@@ -72,7 +76,9 @@
         <p><span id="copyright"> </span><span id="year"></span>Jaime Santiago Herrera David 🇨🇴 Colombia</p>
         <p id="lastModified"></p>
     </footer>
+
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
 </body>
-<script src="scripts/courses.js" defer></script>
-<script src="scripts/menu.js" defer></script>
+
 </html>
