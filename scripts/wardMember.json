@@ -1,0 +1,106 @@
+{
+    "Families":[
+        {
+            "family_name": "Herrera",
+            "move_in_date": "2024-05-11",
+            "number_of_people": 4,
+            "visited_by_bishopric": true,
+            "family_members": [
+                {
+                    "name": "Santiago Herrera",
+                    "gender": "Male",
+                    "birthdate": "1993-12-01"
+                },
+                {
+                    "name": "Lady Pedraza",
+                    "gender": "Female",
+                    "birthdate": "1994-06-17"
+                },
+                {
+                    "name": "Kaori Herrera",
+                    "gender": "Female",
+                    "birthdate": "2020-02-15"
+                },
+                {
+                    "name": "Adler Herrera",
+                    "gender": "Male",
+                    "birthdate": "2022-10-18"
+                }
+            ]
+        },
+        {
+            "family_name": "Botia",
+            "move_in_date": "2006-10-22",
+            "number_of_people": 5,
+            "visited_by_bishopric": true,
+            "family_members": [
+                {
+                    "name": "Cesar Botia",
+                    "gender": "Male",
+                    "birthdate": "1965-11-02"
+                },
+                {
+                    "name": "Ruth Avila",
+                    "gender": "Female",
+                    "birthdate": "1968-06-09" 
+                },
+                {
+                    "name": "Angelica Botia",
+                    "gender": "Female",
+                    "birthdate": "1993-05-11"
+                },
+                {
+                    "name": "Luisa Botia",
+                    "gender": "Female",
+                    "birthdate": "1995-09-25"
+                },
+                {
+                    "name": "Camila Botia",
+                    "gender": "Female",
+                    "birthdate": "1998-02-13"
+                }
+            ]
+        },
+        {
+            "family_name": "Beltran",
+            "move_in_date": "2020-07-31",
+            "number_of_people": 2,
+            "visited_by_bishopric": false,
+            "family_members": [
+                {
+                    "name": "David Beltran",
+                    "gender": "Male",
+                    "birthdate": "1970-04-01"
+                },
+                {
+                    "name": "Luz David",
+                    "gender": "Female",
+                    "birthdate": "1972-02-06"
+                }
+            ]
+        },
+        {
+            "family_name": "Casas",
+            "move_in_date": "2018-07-14",
+            "number_of_people": 3,
+            "visited_by_bishopric": false,
+            "family_members": [
+                {
+                    "name": "Deivi Casas",
+                    "gender": "Male",
+                    "birthdate": "2000-03-18"
+                },
+                {
+                    "name": "Maria Herrera",
+                    "gender": "Female",
+                    "birthdate": "1992-01-06"
+                },
+                {
+                    "name": "Ian Casas",
+                    "gender": "Male",
+                    "birthdate": "2024-03-18"
+                }
+            ]
+        }
+    ]
+}
