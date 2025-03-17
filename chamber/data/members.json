@@ -1,0 +1,60 @@
+{
+    "Companies": [
+        {
+            "name": "Teleperformance",
+            "address": "Ac. 26 #32",
+            "phone_number": "4049080",
+            "Website": "https://www.teleperformance.com",
+            "image": "https://santiagohrd.github.io/wdd230/chamber/data/images/teleperformance.webp",
+            "membership_level": "Gold"
+        },
+        {
+            "name": "Postobon",
+            "address": "Cl. 17a #75",
+            "phone_number": "2204300",
+            "Website": "https://www.postobon.com/",
+            "image": "https://santiagohrd.github.io/wdd230/chamber/data/images/postobon.webp",
+            "membership_level": "Bronze"
+        },
+        {
+            "name": "Alquería",
+            "address": "Cra. 52c #43 sur",
+            "phone_number": "2361453",
+            "Website": "https://www.alqueria.com.co/",
+            "image": "https://santiagohrd.github.io/wdd230/chamber/data/images/Alqueria.webp",
+            "membership_level": "Silver"
+        },
+        {
+            "name": "Alpina",
+            "address": "Km 3, vía Briceño Sopó",
+            "phone_number": "2442018",
+            "Website": "https://alpina.com/",
+            "image": "https://santiagohrd.github.io/wdd230/chamber/data/images/alpina.webp",
+            "membership_level": "Silver"
+        },
+        {
+            "name": "Poseidon",
+            "address": "Av. Cra. 30 #77-48",
+            "phone_number": "3287643",
+            "Website": "https://poseidonbogota.com/",
+            "image": "https://santiagohrd.github.io/wdd230/chamber/data/images/poseidon.webp",
+            "membership_level": "NP Membership"
+        },
+        {
+            "name": "Crepes & Waffles",
+            "address": "Cl. 148 #104-20",
+            "phone_number": "6767600",
+            "Website": "https://www.crepesywaffles.com/",
+            "image": "https://santiagohrd.github.io/wdd230/chamber/data/images/Crepes-Waffles.webp",
+            "membership_level": "Gold"
+        },
+        {
+            "name": "Falabella",
+            "address": "Cl 19A #72-57",
+            "phone_number": "4441234",
+            "Website": "https://www.falabella.com.co/",
+            "image": "https://santiagohrd.github.io/wdd230/chamber/data/images/falabella.webp",
+            "membership_level": "Silver"
+        }
+    ]
+}
