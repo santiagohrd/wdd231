@@ -1,5 +1,5 @@
 const linksURL = 'https://santiagohrd.github.io/wdd231/chamber/data/members.json';
-const cards = document.querySelector('#members')
+const cards = document.querySelector('#members');
 
 async function getMembersData(){
     const response = await fetch(linksURL);
