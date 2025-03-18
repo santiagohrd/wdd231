@@ -1,4 +1,4 @@
-const linksURL = '../data/members.json';
+const linksURL = '../../chamber/data/members.json';
 const cards = document.querySelector('#members')
 
 async function getMembersData(){
