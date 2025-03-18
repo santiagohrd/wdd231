@@ -13,4 +13,4 @@ document.querySelector('#lastModified').innerHTML = `Last modification: ${newDat
 
 const copyright = document.querySelector('#copyright');
 
-copyright.innerHTML = "&copy 2023";
+copyright.innerHTML = "&copy 2025";
