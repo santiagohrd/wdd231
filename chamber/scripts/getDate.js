@@ -11,6 +11,6 @@ const newDate = new Date(document.lastModified).toLocaleDateString("en-UK", opti
 
 document.querySelector('#lastModified').innerHTML = `Last modification: ${newDate}`;
 
-const copyright = document.querySelector('#copyright');
+const currentYear = new Date().getFullYear();
 
-copyright.innerHTML = "&copy 2025";
+document.querySelector('#copyright').innerHTML = `&copy;${currentYear} `;
