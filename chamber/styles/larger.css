@@ -1,5 +1,30 @@
 @media screen and (min-width: 1000px) {
 
+    #menu{
+        display: none;
+    }
+
+    .navigation{
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav {
+        height: 120px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px; 
+    }
+
+    .navigation li{
+        list-style: none;
+        display: list-item;
+    }
+
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -15,4 +40,14 @@
         max-width: 900px;
         margin: 0 1rem;
     }
+
+    footer{
+        display: flex;
+    }
+
+    .footer-info{
+        display: flex;
+        align-items: center;
+    }
+
 }
