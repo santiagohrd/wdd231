@@ -181,6 +181,7 @@ section h2 {
     margin-bottom: 8px;
 }
 
+/* Ventana emergente */
 dialog {
     border: 1px solid rgb(0, 0, 0 / 0.1);
     border-radius: .25rem;
@@ -202,7 +203,7 @@ dialog button{
     padding: .5rem 1rem;
     border: 1px solid rgb(0, 0, 0 / 0.1);
 }
-
+/* Fin Ventana emergente */
 
 footer {
     background-color: cornflowerblue;

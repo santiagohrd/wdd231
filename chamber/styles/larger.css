@@ -41,6 +41,9 @@
         margin: 0 1rem;
     }
 
+    .spot-info {
+        display: flex;
+    }
     footer{
         display: flex;
     }

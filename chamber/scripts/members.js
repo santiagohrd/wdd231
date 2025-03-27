@@ -1,8 +1,8 @@
-const linksURL = 'https://santiagohrd.github.io/wdd231/chamber/data/members.json';
+const linkURL = 'https://santiagohrd.github.io/wdd231/chamber/data/members.json';
 const cards = document.querySelector('#members');
 
 async function getMembersData(){
-    const response = await fetch(linksURL);
+    const response = await fetch(linkURL);
     const data = await response.json();
     displayInfo(data.Companies);
 }
@@ -10,7 +10,6 @@ async function getMembersData(){
 getMembersData();
 
 function displayInfo(company){
-    console.log("Datos recibidos en displayInfo:", company);
     company.forEach((business) => {
         let card = document.createElement("section");
         let logo = document.createElement("img");

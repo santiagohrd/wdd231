@@ -110,6 +110,7 @@ function displayCourses(courseList) {
             card.classList.add("completed"); 
         }
 
+        //Evento de ventana emergente
        card.addEventListener('click', () => {
             displayCourseDetails(element);
         });
@@ -134,7 +135,7 @@ function updateTotalCredits() {
 
 displayCourses(courses);
 
-
+//Ventana emergente
 function displayCourseDetails(courses){
     courseDetails.innerHTML = '';
     courseDetails.innerHTML = `
