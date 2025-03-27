@@ -41,6 +41,16 @@
         margin: 0 1rem;
     }
 
+    .weather-event {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .weather-info {
+        display: grid;
+        grid-template-columns: 50% auto;
+    }
+
     .spot-info {
         display: flex;
     }

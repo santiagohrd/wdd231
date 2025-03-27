@@ -40,10 +40,10 @@ function displaySpotlights(companies) {
         name.textContent = business.name;
         membership.textContent = business.membership_level;
         phone.textContent = `PHONE: ${business.phone_number}`;
-        web.textContent = business.website;
+        web.textContent = business.Website;
         address.textContent = `ADDRESS: ${business.address}`;
 
-        web.setAttribute("href", business.website);
+        web.setAttribute("href", business.Website);
         web.setAttribute("target", "_blank");
 
         logo.setAttribute("src", business.image);
