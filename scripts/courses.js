@@ -80,6 +80,7 @@ const courses = [
 
 const filterButtons = document.querySelectorAll(".filter");
 const courseDiv = document.querySelector(".courses-list");
+const courseDetails = document.querySelector('#course-details');
 
 filterButtons.forEach(button => {
     button.addEventListener("click", () => {
@@ -109,8 +110,12 @@ function displayCourses(courseList) {
             card.classList.add("completed"); 
         }
 
+       card.addEventListener('click', () => {
+            displayCourseDetails(element);
+        });
         card.textContent = `${element.subject} ${element.number}`;
         courseDiv.appendChild(card);
+
     });
 
     updateTotalCredits();
@@ -129,3 +134,22 @@ function updateTotalCredits() {
 
 displayCourses(courses);
 
+
+function displayCourseDetails(courses){
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${courses.subject} ${courses.number}</h2>
+        <h3>${courses.title}</h3>
+        <p><strong>Credits</strong>: ${courses.credits}<p>
+        <p><strong>Certificate</strong>: ${courses.certificate}<p>
+        <p>${courses.description}</p>
+        <p><strong>Technologies</strong>: ${courses.technology.join(', ')}</p>
+    `;
+
+    courseDetails.showModal();
+
+    document.getElementById("closeModal").addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
