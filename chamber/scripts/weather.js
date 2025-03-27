@@ -49,7 +49,6 @@ async function forecastFetch() {
         const response = await fetch(forecastURL);
         if (response.ok) {
             const data = await response.json();
-            // console.log(data);
             displayForecast(data);
         } else {
             throw Error(await response.text());
@@ -68,14 +67,13 @@ function displayForecast(data) {
     forecastContainer.innerHTML = '';
     slicedForecastData.forEach((item) => {
       const date = new Date(item.dt * 1000);
-      const day = date.toLocaleDateString('en-US', { weekday: 'short' });
+      const day = date.toLocaleDateString('en-US', { weekday: 'long' });
   
       const forecastItem = document.createElement('div');
       forecastItem.classList.add('forecast-item');
       forecastItem.innerHTML = `
-        <p>${day}</p>
+        <p>${day}: ${item.main.temp.toFixed(0)}&deg;F</p>
         <img src="https://openweathermap.org/img/w/${item.weather[0].icon}.png" alt="${item.weather[0].description}">
-        <p>${item.main.temp.toFixed(0)}&deg;F</p>
       `;
   
       forecastContainer.appendChild(forecastItem);
