@@ -1,4 +1,18 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 641px) {
+
+    .interest-container {
+        grid-template-areas: 
+        "title title"
+        "photo description"
+        "photo address"
+        "button button"
+        ;
+        width: 700px;
+        gap: 8px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
 
     #menu{
         display: none;
@@ -66,5 +80,10 @@
     .join-main{
         display: grid;
         grid-template-columns: 50% auto;
+    }
+
+    /* Discover */
+    .discover-card {
+        grid-template-columns: 50% 50%;
     }
 }

@@ -406,3 +406,51 @@ form input.form-btn{
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+/* Discovery */
+.discover-card {
+    display: grid;
+    gap: 20px;
+    margin: 20px auto;
+}
+.interest-container {
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "photo"
+        "description"
+        "address"
+        "button";
+    justify-items: center;
+    margin: 0 auto;
+    padding: 8px;
+    background-color: #cbcbd4;
+    border-radius: 10px;
+    width: 320px;
+}
+
+.interest-container h2 {
+    grid-area: title;
+    text-align: center;
+}
+
+figure {
+    grid-area: photo;
+    margin: 0;
+}
+
+.interest-container address {
+    grid-area: address;
+    margin: 10px;
+}
+
+.interest-container p {
+    grid-area: description;
+}
+
+.interest-container button {
+    padding: 12px;
+    width: 100%;
+    border-radius: 20px;
+    grid-area: button;
+}

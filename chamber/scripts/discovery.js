@@ -17,10 +17,14 @@ function displayInfo(data) {
         let photo = document.createElement("img");
         let address = document.createElement("address");
         let description = document.createElement("p");
+        let button = document.createElement("button");
+
+        card.className = 'interest-container';
 
         name.textContent = `${interest.name}`;
         address.textContent = `${interest.address}`;
         description.textContent = `${interest.description}`;
+        button.textContent = `learn more`;
 
         photo.setAttribute("src", interest.image);
         photo.setAttribute("loading", "lazy");
@@ -30,6 +34,7 @@ function displayInfo(data) {
         figure.appendChild(photo);
         card.appendChild(address);
         card.appendChild(description)
+        card.appendChild(button);
         container.appendChild(card);
     });
 }
