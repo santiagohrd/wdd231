@@ -10,43 +10,43 @@
             "name": "Riding bicicle",
             "address": "Zipaquirá, Cundinamarca",
             "description": "Riding my bike on dayoffs is a way to relax and enjoy the nature.",
-            "image": "./Bike.webp"
+            "image": "https://santiagohrd.github.io/wdd231/chamber/data/Bike.webp"
         },
         {
             "name": "Love dogs",
             "address": "My home",
             "description": "Dogs are animals that help as company. Having them around and playing along is another best way to invest time",
-            "image": "./Dogs.webp"
+            "image": "https://santiagohrd.github.io/wdd231/chamber/data/Dogs.webp"
         },
         {
             "name": "Walking in the nature",
             "address": "Zipaquirá, Cundinamarca",
             "description": "Zipaquirá is a town, two hours from the Capital, and has a lot of natural spaces where we can walk.",
-            "image": "./Nature.webp"
+            "image": "https://santiagohrd.github.io/wdd231/chamber/data/Nature.webp"
         },
         {
             "name": "Temples in Tokyo",
             "address": "Tokyo, Japan",
             "description": "I admire the Nippon culture and hope someday to visit it",
-            "image": "./Tokyo.webp"
+            "image": "https://santiagohrd.github.io/wdd231/chamber/data/Tokyo.webp"
         },
         {
             "name": "Photography",
             "address": "Nature, and events",
             "description": "The photography is my passion in free time, special in the nature.",
-            "image": "./Photo.webp"
+            "image": "https://santiagohrd.github.io/wdd231/chamber/data/Photo.webp"
         },
         {
             "name": "LDS Temple",
             "address": "Saint Latter-Day Temple",
             "description": "Visiting the Temple in Bogotá with my family each opportunity we have.",
-            "image": "./Temple.webp"
+            "image": "https://santiagohrd.github.io/wdd231/chamber/data/Temple.webp"
         },
         {
             "name": "Harry Potter",
             "address": "Hogwarts",
             "description": "My favorite movie in the history.",
-            "image": "./Fantasy.webp"
+            "image": "https://santiagohrd.github.io/wdd231/chamber/data/Fantasy.webp"
         }
     ]
 }
