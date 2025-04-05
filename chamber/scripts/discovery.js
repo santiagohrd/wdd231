@@ -25,7 +25,7 @@ function displayInfo(data) {
         photo.setAttribute("src", interest.image);
         photo.setAttribute("loading", "lazy");
 
-        card.appendChild(h2);
+        card.appendChild(name);
         card.appendChild(figure);
         figure.appendChild(photo);
         card.appendChild(address);
