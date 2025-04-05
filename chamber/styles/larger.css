@@ -1,5 +1,12 @@
 @media screen and (min-width: 641px) {
 
+    .discover-card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 20px;
+        justify-items: center;
+    }
+
     .interest-container {
         grid-template-areas: 
         "title title"
@@ -7,9 +14,18 @@
         "photo address"
         "button button"
         ;
+        max-width: 100%;
         width: 700px;
         gap: 8px;
     }
+
+    .latestVisit{
+        font-weight: bolder;
+        font-size: larger;
+        grid-column: 1 / 3;
+    }
+
+    figure img:hover {box-shadow: 0 0 50px #333;}
 }
 
 @media screen and (min-width: 1025px) {

@@ -439,6 +439,10 @@ figure {
     margin: 0;
 }
 
+figure img {
+    max-width: 100%;
+}
+
 .interest-container address {
     grid-area: address;
     margin: 10px;
