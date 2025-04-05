@@ -454,3 +454,17 @@ figure {
     border-radius: 20px;
     grid-area: button;
 }
+
+.latestVisit{
+    background-color: #aed154;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+    width: 80%;
+    height: 32px;
+    margin: 0 auto;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
