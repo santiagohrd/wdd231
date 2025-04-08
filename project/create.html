@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago Herrera">
+    <meta name="title">
+    <meta name="description"
+        content="Who Attends Seminars is a web page where teachers and students of the Seminaries program of The Church of Jesus Christ of Latter-day Saints can do interactive web activities to integrate and evaluate their knowledge acquired in class.">
+    <meta property="og:title" content="Who Attends Seminars">
+    <meta property="type" content="website">
+    <meta property="image" content="###">
+    <meta property="og:url" content="###">
+    <title>Who Attends Seminars?</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+</head>
+<body>
+    <header class="topnav">
+        <a href="#home" class="active">Who Attends Seminars?</a>
+        <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="#contact">Play</a>
+            <a href="#">Create yours!</a>
+        </div>
+    </header>
+
+    <main>
+        <form action="thankyou.html" method="post" class="form">
+            <fieldset>
+              <legend>Teacher's info</legend>
+          
+              <label class="top">Name* 
+                <input type="text" name="nombre" required>
+              </label>
+          
+              <label class="top">Stake* 
+                <input type="text" name="estaca" required>
+              </label>
+          
+              <label class="top">Ward/Branch* 
+                <input type="text" name="barrio" required>
+              </label>
+          
+              <label class="top">Email* 
+                <input type="email" name="email" required>
+              </label>
+          
+              <label class="top">Phone* 
+                <input type="tel" name="telefono" required>
+              </label>
+            </fieldset>
+          
+            <fieldset>
+              <legend>Game Question</legend>
+          
+              <label class="top">Question* 
+                <textarea name="pregunta" rows="4" required></textarea>
+              </label>
+          
+              <label class="top">Right answer (Option A)* 
+                <input type="text" name="opcionA" required>
+              </label>
+          
+              <label class="top">Wrong answer (Option B)* 
+                <input type="text" name="opcionB" required>
+              </label>
+          
+              <label class="top">Wrong answer (Option C)* 
+                <input type="text" name="opcionC" required>
+              </label>
+          
+              <label class="top">Wrong answer (Option D)* 
+                <input type="text" name="opcionD" required>
+              </label>
+          
+              <label class="top">Difficulty Level*
+                <select name="dificultad" required>
+                  <option value="">Choose level</option>
+                  <option value="1">1 - Easy</option>
+                  <option value="2">2 - Mediu</option>
+                  <option value="3">3 - Hard</option>
+                </select>
+              </label>
+          
+              <label class="top">Study Book*
+                <select name="libro" required>
+                  <option value="">Select a book</option>
+                  <option value="Book of Mormon">The book of Mormon</option>
+                  <option value="Doctrine and Covenants">Doctrine and Covenants</option>
+                  <option value="Old Testament">Old Testament</option>
+                  <option value="New Testament">New Testament</option>
+                  <option value="Otro">Other...</option>
+                </select>
+              </label>
+            </fieldset>
+          
+            <input type="submit" value="Send Question" class="form-btn">
+          </form>
+          
+    </main>
+    <footer>
+        <div class="wdd230-info">
+            <p>WDD 231 Class Project</p>
+            <p>Jaime Santiago Herrera David </p>
+            <p id="copyright">Who Attends Seminars?</p>
+        </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>
