@@ -1,0 +1,73 @@
+[
+    {
+      "question": "Who was the first prophet in the Book of Mormon?",
+      "options": ["Nephi", "Lehi", "Jacob", "Mosiah"],
+      "correct_answer": "Lehi",
+      "level": 1,
+      "type": "Book of Mormon"
+    },
+    {
+      "question": "Which prophet saw the Tree of Life vision?",
+      "options": ["Mosiah", "Alma", "Nephi", "Helaman"],
+      "correct_answer": "Nephi",
+      "level": 2,
+      "type": "Book of Mormon"
+    },
+    {
+      "question": "In Doctrine and Covenants 89, what is the name of the revelation about health?",
+      "options": ["The Law of Consecration", "The Law of Tithing", "The Word of Wisdom", "The Law of Chastity"],
+      "correct_answer": "The Word of Wisdom",
+      "level": 1,
+      "type": "Doctrine and Covenants"
+    },
+    {
+      "question": "What section in the Doctrine and Covenants talks about the three degrees of glory?",
+      "options": ["Section 76", "Section 89", "Section 132", "Section 138"],
+      "correct_answer": "Section 76",
+      "level": 3,
+      "type": "Doctrine and Covenants"
+    },
+    {
+      "question": "Who baptized Jesus Christ?",
+      "options": ["Peter", "Paul", "John the Baptist", "James"],
+      "correct_answer": "John the Baptist",
+      "level": 1,
+      "type": "New Testament"
+    },
+    {
+      "question": "Which apostle betrayed Jesus for 30 pieces of silver?",
+      "options": ["Peter", "James", "Judas Iscariot", "John"],
+      "correct_answer": "Judas Iscariot",
+      "level": 2,
+      "type": "New Testament"
+    },
+    {
+      "question": "Who led the Israelites out of Egypt?",
+      "options": ["Abraham", "Joseph", "Moses", "Aaron"],
+      "correct_answer": "Moses",
+      "level": 1,
+      "type": "Old Testament"
+    },
+    {
+      "question": "Which prophet was thrown into a lion's den?",
+      "options": ["Elijah", "Isaiah", "Daniel", "Jeremiah"],
+      "correct_answer": "Daniel",
+      "level": 2,
+      "type": "Old Testament"
+    },
+    {
+      "question": "Where was the First Vision received?",
+      "options": ["Kirtland, Ohio", "Palmyra, New York", "Nauvoo, Illinois", "Salt Lake City, Utah"],
+      "correct_answer": "Palmyra, New York",
+      "level": 2,
+      "type": "Other"
+    },
+    {
+      "question": "What is the name of the LDS Church's living prophet as of 2024?",
+      "options": ["Thomas S. Monson", "Russell M. Nelson", "Dallin H. Oaks", "Jeffrey R. Holland"],
+      "correct_answer": "Russell M. Nelson",
+      "level": 1,
+      "type": "Other"
+    }
+  ]
+  
