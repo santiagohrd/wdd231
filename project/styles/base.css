@@ -367,7 +367,6 @@ dialog {
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Cierre modal */
 #closeModal {
   position: absolute;
   top: 1rem;
@@ -384,20 +383,17 @@ dialog {
   transform: scale(1.2);
 }
 
-/* Título */
 .modal-container h2 {
   color: #ffd700;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-/* Párrafo */
 .modal-container p {
   text-align: center;
   margin-bottom: 1rem;
 }
 
-/* Lista */
 .modal-container ul {
   list-style: none;
   padding-left: 0;
@@ -407,13 +403,11 @@ dialog {
   margin-bottom: 0.5rem;
 }
 
-/* Sublista */
 .modal-container ul ul {
   margin-top: 0.5rem;
   padding-left: 1.2rem;
 }
 
-/* Botón de inicio */
 #startGameBtn {
   display: block;
   margin: 2rem auto 0;
