@@ -1,0 +1,12 @@
+@media screen and (min-width: 900px) {
+    .answers {  
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        align-items: center;
+        }
+}
+
+@media screen and (min-width: 641px) {
+    
+  }
