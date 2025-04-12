@@ -71,6 +71,7 @@ h1 {
   display: grid;
   gap: 10px;
   color: #f1f1f1;
+  justify-items: center;
 }
 
 .card {
@@ -78,7 +79,8 @@ h1 {
   background: radial-gradient(circle, rgba(3,42,42,1) 0%, rgba(0,0,0,1) 100%);
   padding: 1rem;
   min-height: 120px;
-  max-width: 500px;
+  min-width: 200px;
+  width: 500px;
 }
 
 .card h3 {
@@ -207,4 +209,225 @@ textarea {
   background-color: var(--t-color);
   color: var(--w-color);
   transform: scale(1.05);
+}
+
+/* Play */
+.play {
+  width: 100%;
+  height: 70vh;
+}
+
+svg { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.question-game {
+  position: relative;
+  margin: 4rem auto;
+  padding: 1rem;
+  top: 50px;
+
+}
+
+.question {
+  margin: 0 auto;
+  height: 200px;
+  max-width: 70%;
+  background-color: #04AA6D;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 120px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px 30px;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.answers {
+  margin: 0 auto;
+  height: 400px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.answer-btn {
+  margin: 0 auto;
+  height: 100px;
+  width: 100%;
+  background-color: var(--p-color);
+  color: var(--f-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.answer-btn.selected {
+  background-color: #FFD700;
+  color: var(--b-color);
+}
+
+.answer-btn.correct,
+.answer-btn.correct:hover {
+  background-color: #28a745 !important;
+  color: var(--f-color) !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.reset-btn {
+  background: var(--p-color);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  color: var(--f-color);
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  left: 100px;
+}
+
+.reset-btn:hover {
+  background-color: var(--s-color);
+  color: var(--b-color);
+  transform: scale(1.05);
+}
+
+/* Thank you */
+h1 {
+  color: var(--s-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: var(--p-color);
+  margin-top: 2rem;
+}
+
+#confirmation {
+  background-color: var(--f-color);
+  color: var(--b-color);
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+strong {
+  color: var(--t-color);
+}
+
+/* modal */
+dialog {
+  margin: 0 auto;
+  align-self: center;
+}
+
+.modal-container {
+  background-color: #1a1a2e;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Cierre modal */
+#closeModal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ffd700;
+  transition: transform 0.2s ease;
+}
+
+#closeModal:hover {
+  transform: scale(1.2);
+}
+
+/* Título */
+.modal-container h2 {
+  color: #ffd700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Párrafo */
+.modal-container p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Lista */
+.modal-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal-container li {
+  margin-bottom: 0.5rem;
+}
+
+/* Sublista */
+.modal-container ul ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+/* Botón de inicio */
+#startGameBtn {
+  display: block;
+  margin: 2rem auto 0;
+  background-color: #ffd700;
+  color: #1a1a2e;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#startGameBtn:hover {
+  background-color: #e6c200;
 }
