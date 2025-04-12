@@ -47,10 +47,10 @@ import {
           if (newIndex < getQuestions().length) {
             showQuestion();
           } else {
-            console.log("Congratulations! You finished all the questions.");
+            // console.log("Congratulations! You finished all the questions.");
           }
         } else {
-          console.log("Incorrect answer, starting over.");
+        //   console.log("Incorrect answer, starting over.");
           setCurrentIndex(0);
           showQuestion();
         }
