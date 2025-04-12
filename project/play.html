@@ -16,6 +16,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
 </head>
 <body>
@@ -28,8 +29,22 @@
         </div>
     </header>
 
-    <main>
+    <main class="play">
+        <dialog class="modal-container"></dialog>
+        <svg xmlns="http://www.w3.org/2000/svg"><defs><pattern id="a" width="40" height="40" patternTransform="scale(2)" patternUnits="userSpaceOnUse"><rect width="100%" height="100%" fill="#b0bec4"/><path fill="none" stroke="#ffd900" stroke-width=".5" d="M0 10v20m40-20v20M10 40h20M10 0h20m10 50c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10-4.477 10-10 10zM10 40c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10 10 4.477 10 10m30-30c-5.523 0-10-4.477-10-10s4.477-10 10-10S50-5.523 50 0s-4.477 10-10 10zM10 0c0 5.523-4.477 10-10 10S-10 5.523-10 0s4.477-10 10-10S10-5.523 10 0"/><path fill="none" stroke="#1a227f" stroke-width=".5" d="M20-10v20m0 20v20m-30-30h20m20 0h20m-20 0c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10 10 4.477 10 10"/></pattern></defs><rect width="800%" height="800%" fill="url(#a)"/></svg>
         
+        <button id="reset-btn" class="reset-btn">Reset Game</button>
+        <section class="question-game">
+
+            <div class="question">
+
+            </div>
+
+            <div class="answers"></div>
+
+        </section>
+
+
     </main>
     <footer>
         <div class="wdd230-info">
@@ -38,6 +53,10 @@
             <p id="copyright">Who Attends Seminars?</p>
         </div>
     </footer>
-    <script src="scripts/menu.js"></script>
+    <script src="scripts/menu.js" defer></script>
+    <script type="module" src="scripts/main.js" defer></script>
+
+    <!-- <script src="scripts/game.js" defer></script>
+    <script src="scripts/lastvisit.js" defer></script> -->
 </body>
 </html>
