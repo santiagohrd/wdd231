@@ -16,40 +16,46 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
 </head>
 <body>
     <header class="topnav">
-        <a href="#home" class="active">Who Attends Seminars?</a>
-        <div id="myLinks">
-            <a href="#">Home</a>
-            <a href="play.html">Play</a>
-            <a href="create.html">Create yours!</a>
-        </div>
+        <img class="logo" src="images/logo.1.svg" alt="logo">
+        <button id="open" class="menu"></button>
+        <nav class="nav" id="nav">
+            <button id="close" class="menu close"></button>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="play.html">Play</a></li>
+                <li><a href="create.html">Create yours!</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <section class="home-container">
             <div class="hero">
                 <h1>🎓 Make learning exciting!</h1>
-                <p></p>
+                <p>Turn every lesson into an unforgettable experience with the Who Attends Seminars? game, which helps reinforce knowledge in a fun and dynamic way.
+                <br>Help reinforce knowledge in a fun and dynamic way - personalize your questions and motivate each student to learn as they play!</p>
                 <img src="https://placehold.co/400" alt="Hero Image" class="hide-small" loading="lazy">
                 <form action="play.html">
                     <button id="play">Start now!</button>
                 </form>
             </div>
             <div class="card-container">
-                <div class="card">
+                <div class="card card1">
                     <h3>📚 Learn</h3>
                     <p>"It is incumbent on each of us to equip ourselves to do something worthwhile in society—to acquire more and more light, so that our personal light can help illuminate a darkened world."</p>
                     <address>President Gordon B. Hinckley</address>
                 </div>
-                <div class="card">
+                <div class="card card2">
                     <h3>🤝 Share</h3>
                     <p>"Education is the difference between wishing you could help other people and being able to help them.”</p>
                     <address>Russell M. Nelson</address>
                 </div>
-                <div class="card">
+                <div class="card card3">
                     <h3>🎉 Enjoy</h3>
                     <p>"Happiness is the goal and purpose of our existence."</p>
                     <address>Josepth Smith</address>
@@ -109,6 +115,6 @@
             <p id="copyright">Who Attends Seminars?</p>
         </div>
     </footer>
-    <script src="scripts/menu.js"></script>
+    <script src="scripts/menu.js" defer></script>
 </body>
 </html>

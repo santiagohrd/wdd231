@@ -16,91 +16,98 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
 </head>
 <body>
-    <header class="topnav">
-        <a href="#home" class="active">Who Attends Seminars?</a>
-        <div id="myLinks">
-            <a href="index.html">Home</a>
-            <a href="play.html">Play</a>
-            <a href="#">Create yours!</a>
-        </div>
-    </header>
+  <header class="topnav">
+    <img class="logo" src="images/logo.1.svg" alt="logo">
+    <button id="open" class="menu"></button>
+    <nav class="nav" id="nav">
 
-    <main>
-        <form action="thankyou.html" method="get" class="form">
-            <fieldset>
-              <legend>Teacher's info</legend>
-          
-              <label class="top">Name* 
-                <input type="text" name="nombre" required>
-              </label>
-          
-              <label class="top">Stake* 
-                <input type="text" name="estaca" required>
-              </label>
-          
-              <label class="top">Ward/Branch* 
-                <input type="text" name="barrio" required>
-              </label>
-          
-              <label class="top">Email* 
-                <input type="email" name="email" required>
-              </label>
-          
-              <label class="top">Phone* 
-                <input type="tel" name="telefono" required>
-              </label>
-            </fieldset>
-          
-            <fieldset>
-              <legend>Game Question</legend>
-          
-              <label class="top">Question* 
-                <textarea name="pregunta" rows="4" required></textarea>
-              </label>
-          
-              <label class="top">Right answer (Option A)* 
-                <input type="text" name="opcionA" required>
-              </label>
-          
-              <label class="top">Wrong answer (Option B)* 
-                <input type="text" name="opcionB" required>
-              </label>
-          
-              <label class="top">Wrong answer (Option C)* 
-                <input type="text" name="opcionC" required>
-              </label>
-          
-              <label class="top">Wrong answer (Option D)* 
-                <input type="text" name="opcionD" required>
-              </label>
-          
-              <label class="top">Difficulty Level*
-                <select name="dificultad" required>
-                  <option value="">Choose level</option>
-                  <option value="1">1 - Easy</option>
-                  <option value="2">2 - Mediu</option>
-                  <option value="3">3 - Hard</option>
-                </select>
-              </label>
-          
-              <label class="top">Study Book*
-                <select name="libro" required>
-                  <option value="">Select a book</option>
-                  <option value="Book of Mormon">The book of Mormon</option>
-                  <option value="Doctrine and Covenants">Doctrine and Covenants</option>
-                  <option value="Old Testament">Old Testament</option>
-                  <option value="New Testament">New Testament</option>
-                  <option value="Otro">Other...</option>
-                </select>
-              </label>
-            </fieldset>
-          
-            <input type="submit" value="Send Question" class="form-btn">
-          </form>
-          
+      <button id="close" class="menu close"></button>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="play.html">Play</a></li>
+        <li><a href="create.html">Create yours!</a></li>
+      </ul>
+    </nav>
+</header>
+
+
+<main>
+  <form action="thankyou.html" method="get" class="form">
+    <fieldset>
+      <legend>Teacher's info</legend>
+  
+      <label class="top">Name* 
+        <input type="text" name="nombre" required>
+      </label>
+  
+      <label class="top">Stake* 
+        <input type="text" name="estaca" required>
+      </label>
+  
+      <label class="top">Ward/Branch* 
+        <input type="text" name="barrio" required>
+      </label>
+  
+      <label class="top">Email* 
+        <input type="email" name="email" required>
+      </label>
+  
+      <label class="top">Phone* 
+        <input type="tel" name="telefono" required>
+      </label>
+    </fieldset>
+  
+    <fieldset>
+      <legend>Game Question</legend>
+  
+      <label class="top">Question* 
+        <textarea name="pregunta" rows="4" required></textarea>
+      </label>
+  
+      <label class="top">Right answer (Option A)* 
+        <input type="text" name="opcionA" required>
+      </label>
+  
+      <label class="top">Wrong answer (Option B)* 
+        <input type="text" name="opcionB" required>
+      </label>
+  
+      <label class="top">Wrong answer (Option C)* 
+        <input type="text" name="opcionC" required>
+      </label>
+  
+      <label class="top">Wrong answer (Option D)* 
+        <input type="text" name="opcionD" required>
+      </label>
+  
+      <label class="top">Difficulty Level*
+        <select name="dificultad" required>
+          <option value="">Choose level</option>
+          <option value="1">1 - Easy</option>
+          <option value="2">2 - Mediu</option>
+          <option value="3">3 - Hard</option>
+        </select>
+      </label>
+  
+      <label class="top">Study Book*
+        <select name="libro" required>
+          <option value="">Select a book</option>
+          <option value="Book of Mormon">The book of Mormon</option>
+          <option value="Doctrine and Covenants">Doctrine and Covenants</option>
+          <option value="Old Testament">Old Testament</option>
+          <option value="New Testament">New Testament</option>
+          <option value="Otro">Other...</option>
+        </select>
+      </label>
+    </fieldset>
+    
+    <input type="submit" value="Send Question" class="form-btn">
+    </form>
+      
     </main>
     <footer>
         <div class="wdd230-info">
@@ -109,6 +116,6 @@
             <p id="copyright">Who Attends Seminars?</p>
         </div>
     </footer>
-    <script src="scripts/menu.js"></script>
+    <script src="scripts/menu.js" defer></script>
 </body>
 </html>

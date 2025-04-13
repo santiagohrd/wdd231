@@ -1,8 +1,13 @@
+const nav = document.querySelector('#nav');
+const openbtn = document.querySelector('#open');
+const closebtn = document.querySelector('#close');
 
-const x = document.getElementById("myLinks");
-if (x.style.display === "block") {
-  x.style.display = "none";
-} else {
-  x.style.display = "block";
-}
+openbtn.addEventListener("click", () => {
+  nav.classList.add("visible");
+  openbtn.style.display = "none";
+});
 
+closebtn.addEventListener("click", () => {
+  nav.classList.remove("visible");
+  openbtn.style.display = "block"; 
+})
