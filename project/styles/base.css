@@ -243,7 +243,22 @@ button {
 }
 
 .book-study {
-  text-decoration: none;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--accent-color, #4CAF50);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.book-study:hover {
+  background-color: #3e8e41;
+  transform: scale(1.05);
 }
 
 .form{
