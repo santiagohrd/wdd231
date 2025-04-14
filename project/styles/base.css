@@ -245,7 +245,7 @@ button {
 .book-study {
   margin-top: 1rem;
   padding: 0.5rem 1.5rem;
-  background-color: var(--accent-color, #4CAF50);
+  background-color: var(--p-color);
   color: white;
   font-weight: bold;
   font-size: 1rem;
@@ -257,7 +257,7 @@ button {
 }
 
 .book-study:hover {
-  background-color: #3e8e41;
+  background-color: var(--t-color);
   transform: scale(1.05);
 }
 
